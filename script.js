@@ -22,7 +22,7 @@ function round(v) {
 function deviceOrientationListener(event) {
      var c=document.getElementById("myCanvas");
      var ctx=c.getContext("2d");
-     ctx.clearRect(0,0, c.width, c.height);
+     
      ctx.fillStyle="#00000";
      ctx.font="20px Verdana";
      ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40);
