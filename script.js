@@ -25,9 +25,9 @@ function deviceOrientationListener(event) {
      ctx.clearRect(0,0, c.width, c.height);
      ctx.fillStyle="#00000";
      ctx.font="20px Verdana";
-     ctx.fillText("Alpha:" + Math.round(event.alpha) );
-     ctx.fillText("Beta:" + Math.round(event.beta));
-     ctx.fillText("Gamma:" + Math.round(event.gamma));
+     ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40);
+     ctx.fillText("Beta:" + Math.round(event.beta),10,80);
+     ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
 
 
      var img = document.getElementById('cd');
