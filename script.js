@@ -25,11 +25,11 @@ function deviceOrientationListener(event) {
      
      ctx.fillStyle="#00000";
      ctx.font="20px Verdana";
-    var i=100;
-     ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40+i);
-     ctx.fillText("Beta:" + Math.round(event.beta),10,80+i);
-     ctx.fillText("Gamma:" + Math.round(event.gamma),10,120+i);
-i=i+100;
+    
+     ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40);
+     ctx.fillText("Beta:" + Math.round(event.beta),10,80);
+     ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
+
 
      var img = document.getElementById('cd');
      var GammaVal = round(event.gamma);
