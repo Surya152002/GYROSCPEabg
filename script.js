@@ -22,22 +22,12 @@ function round(v) {
 function deviceOrientationListener(event) {
      var c=document.getElementById("myCanvas");
      var ctx=c.getContext("2d");
-     
+     ctx.clearRect(0,0, c.width, c.height);
      ctx.fillStyle="#00000";
      ctx.font="20px Verdana";
-    
      ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40);
      ctx.fillText("Beta:" + Math.round(event.beta),10,80);
-    ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
-    navigator.geolocation.watchPosition((data)=>{
-        const spe=data.coords.speed;
-        console.log(data);
-         ctx.fillText("Speed:" + Math.round(data.spe),10,160);
-
-        
-    });
-   
-    
+     ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
 
 
      var img = document.getElementById('cd');
