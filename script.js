@@ -29,7 +29,14 @@ function deviceOrientationListener(event) {
      ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40);
      ctx.fillText("Beta:" + Math.round(event.beta),10,80);
     ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
-    ctx.fillText("Gamma:" + Math.round(event.gamma),10,160);
+    navigator.geolocation.watchPosition((data)=>{
+        const spe=data.coords.speed;
+        console.log(data);
+         ctx.fillText("Speed:" + Math.round(data.spe),10,160);
+
+        
+    });
+   
     
 
 
