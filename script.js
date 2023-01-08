@@ -31,7 +31,11 @@ function deviceOrientationListener(event) {
     
     if(Math.round(event.alpha)>95)
     {
-        ctx.fillText("Orientation:" + "Proper Seating Mode",10,200);
+        if(Math.round(event.beta)>93){
+            if(Math.round(event.gamma)>13){
+                ctx.fillText("Orientation of Seating:" + "Proper Seating Mode",10,200);
+            }
+        }
     }
 
      var img = document.getElementById('cd');
