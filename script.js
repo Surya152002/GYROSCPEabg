@@ -1,7 +1,7 @@
 var lastImageNumber = 20;
 var images = [];
 for (var i = -20; i < lastImageNumber+1; i += 1) {
-    images[i] = "http://www.dhpcleaningservice.co.uk/vr/CDTest_" + i + ".jpg";
+    images[i] = "http://www.jeep.com/assets/images/vehicles/2015/cherokee/vlp/mod-exterior-360/frame-" + i + ".jpg";
 }
 
 window.addEventListener("DOMContentLoaded", function() {
