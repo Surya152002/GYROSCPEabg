@@ -1,4 +1,4 @@
-var lastImageNumber = 20;
+var lastImageNumber = 1;
 var images = [];
 for (var i = 36; i < lastImageNumber+1; i += 1) {
     images[i] = "http://www.jeep.com/assets/images/vehicles/2015/cherokee/vlp/mod-exterior-360/frame-" + i + ".jpg";
