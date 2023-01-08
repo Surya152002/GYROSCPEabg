@@ -28,8 +28,11 @@ function deviceOrientationListener(event) {
      ctx.fillText("Alpha:" + Math.round(event.alpha) ,10,40);
      ctx.fillText("Beta:" + Math.round(event.beta),10,80);
      ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
-    ctx.fillText("Gamma:" + Math.round(event.gamma),10,160);
-
+    
+    if(Math.round(event.alpha)>95)
+    {
+        ctx.fillText("Orientation:" + "Proper Seating Mode",10,160);
+    }
 
      var img = document.getElementById('cd');
      var GammaVal = round(event.gamma);
