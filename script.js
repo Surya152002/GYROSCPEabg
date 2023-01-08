@@ -37,8 +37,8 @@ function deviceOrientationListener(event) {
      var img = document.getElementById('cd');
      var GammaVal = round(event.gamma);
      var ForceInRange = Math.floor(GammaVal);
-     if (GammaVal <= -20) {   img.src = images[-20]; } // Constrain first image
-      else if (GammaVal >= 20)  {  img.src = images[lastImageNumber]; } //Constrain last image
+     if (GammaVal <= 36) {   img.src = images[36]; } // Constrain first image
+      else if (GammaVal >= 1)  {  img.src = images[lastImageNumber]; } //Constrain last image
         else img.src = images[ForceInRange];
 ctx.fillText("Using Image:" + img.src ,10,160);
 }
