@@ -52,7 +52,7 @@ function deviceOrientationListener(event) {
     {
         if(Math.round(event.beta)>80){
             if(Math.round(event.gamma)>0){
-                ctx.fillText("User Started using Application",10,240);
+                ctx.fillText("Orientation of Seating:" + "Not Proper Seating Mode",10,240);
             }
         }
     }
