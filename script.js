@@ -29,11 +29,30 @@ function deviceOrientationListener(event) {
      ctx.fillText("Beta:" + Math.round(event.beta),10,80);
      ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
     
-    if(Math.round(event.alpha)>95)
+    if(Math.round(event.alpha)>90)
     {
-        if(Math.round(event.beta)>93){
-            if(Math.round(event.gamma)>13){
-                ctx.fillText("Orientation of Seating:" + "Proper Seating Mode",10,200);
+        if(Math.round(event.alpha)<120)
+        {
+            if(Math.round(event.beta)>90){
+                if(Math.round(event.gamma)>8){
+                    ctx.fillText("Orientation of Seating:" + "Proper Seating Mode",10,240);
+                }
+            }
+        }
+    }
+    if(Math.round(event.alpha)>0)
+    {
+        if(Math.round(event.beta)>0){
+            if(Math.round(event.gamma)>0){
+                ctx.fillText("User Started using Application",10,200);
+            }
+        }
+    }
+    if(Math.round(event.alpha)>120 && Math.round(event.alpha)<150)
+    {
+        if(Math.round(event.beta)>80){
+            if(Math.round(event.gamma)>0){
+                ctx.fillText("User Started using Application",10,240);
             }
         }
     }
