@@ -8,7 +8,7 @@ var synth = window.speechSynthesis;
         
 
         function speech(){  
-        var toSpeak = new SpeechSynthesisUtterance("User Started using Application");
+        var toSpeak = new SpeechSynthesisUtterance("Welcome");
             var selectedVoiceName = "Microsoft Zira - English (United States)";
             voices.forEach((voice)=>{
                 if(voice.name === selectedVoiceName){
