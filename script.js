@@ -1,6 +1,4 @@
-var txtInput = document.querySelector('#txtInput');
-        var voiceList = document.querySelector('#voiceList');
-        var btnSpeak = document.querySelector('#btnSpeak');
+
         var synth = window.speechSynthesis;
         var voices = [];
         speech();
@@ -16,17 +14,7 @@ var txtInput = document.querySelector('#txtInput');
             });
             synth.speak(toSpeak);}
             
-        btnSpeak.addEventListener('click', ()=> {
-            var toSpeak = new SpeechSynthesisUtterance("Thanks for using the Smart Chair");
-            var selectedVoiceName = "Microsoft Zira - English (United States)";
-            voices.forEach((voice)=>{
-                if(voice.name === selectedVoiceName){
-                    toSpeak.voice = voice;
-                }
-            });
-            synth.speak(toSpeak);
-            speech();
-        });
+        
 var lastImageNumber = 36;
 var images = [];
 for (var i = 1; i < lastImageNumber+1; i += 1) {
