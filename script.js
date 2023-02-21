@@ -76,7 +76,7 @@ function deviceOrientationListener(event) {
         if(Math.round(event.beta)>0){
             if(Math.round(event.gamma)>0){
                 ctx.fillText("User Started using Application",10,200);
-                
+                speech();
             }
         }
     }
