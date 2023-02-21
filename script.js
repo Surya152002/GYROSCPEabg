@@ -18,22 +18,9 @@ window.addEventListener("DOMContentLoaded", function() {
 function round(v) {
     return (v >= 0 || -1) * Math.round(Math.abs(v));
 }
-var synth = window.speechSynthesis;
-        var voices = [];
-if(speechSynthesis !== undefined){
-            speechSynthesis.onvoiceschanged = PopulateVoices;
-            speech();
-        }
-speech();
-function speech(){  
-        var toSpeak = new SpeechSynthesisUtterance("You are Smart");
-            var selectedVoiceName = "Microsoft Zira - English (United States)";
-            voices.forEach((voice)=>{
-                if(voice.name === selectedVoiceName){
-                    toSpeak.voice = voice;
-                }
-            });
-            synth.speak(toSpeak);}
+
+
+
 function deviceOrientationListener(event) {
      var c=document.getElementById("myCanvas");
      var ctx=c.getContext("2d");
