@@ -81,17 +81,12 @@ function deviceOrientationListener(event) {
      ctx.fillText("Beta:" + Math.round(event.beta),10,80);
      ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
     
-    if(Math.round(event.alpha)>90)
+    if(Math.round(event.alpha)<93 && (event.alpha)>85    )
     {
-        if(Math.round(event.alpha)<120)
-        {
-            if(Math.round(event.beta)>90){
-                if(Math.round(event.gamma)>8){
+        
                     ctx.fillText("Orientation of Seating:" + "Proper Seating Mode",10,240);
                         speech1();
-                }
-            }
-        }
+               
     }
     if(Math.round(event.alpha)>0)
     {
@@ -100,7 +95,7 @@ function deviceOrientationListener(event) {
                 ctx.fillText("User Started using Application",10,200); 
                 
 
-                    speech();
+                    
                 
             }
         }
@@ -110,7 +105,7 @@ function deviceOrientationListener(event) {
         if(Math.round(event.beta)>80){
             if(Math.round(event.gamma)>0){
                 ctx.fillText("Orientation of Seating:" + "Not Proper Seating Mode",10,240);
-                    speech2();
+                    
             }
         }
     }
@@ -121,7 +116,7 @@ function deviceOrientationListener(event) {
                     
                         
                             ctx.fillText("Thanks for using Smart Chair",10,280);
-                                speech3();
+                                
                         
                     
                 }
@@ -132,7 +127,7 @@ function deviceOrientationListener(event) {
                         if(Math.round(event.beta)==0){
                             if(Math.round(event.gamma)==0){
                                 ctx.fillText("Thanks for using Smart Chair",10,280);
-                                    speech3();
+                                    
                             }
                         }
                     } 
