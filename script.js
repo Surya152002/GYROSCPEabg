@@ -100,15 +100,14 @@ function deviceOrientationListener(event) {
             }
         }
     }
-    if(Math.round(event.alpha)>120 && Math.round(event.alpha)<150)
-    {
-        if(Math.round(event.beta)<80){
-            if(Math.round(event.gamma)>0){
+    
+        if(Math.round(event.beta)<83){
+            
                 ctx.fillText("Orientation of Seating:" + "Not Proper Seating Mode",10,240);
                     
-            }
+            
         }
-    }
+    
         if(Math.round(event.gamma )<55 &&   Math.round(event.beta)<27   )
             {
                 
