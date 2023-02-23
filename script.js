@@ -17,6 +17,25 @@
                 }
             });
             synth.speak(toSpeak);}
+
+         function speech1(){  
+        var toSpeak = new SpeechSynthesisUtterance("Orientation of Seating:" + "Proper Seating Mode");
+            var selectedVoiceName = "Microsoft Zira - English (United States)";
+            voices.forEach((voice)=>{
+                if(voice.name === selectedVoiceName){
+                    toSpeak.voice = voice;
+                }
+            });
+            synth.speak(toSpeak);}
+        function speech2(){  
+        var toSpeak = new SpeechSynthesisUtterance("Orientation of Seating:" + "Not Proper Seating Mode");
+            var selectedVoiceName = "Microsoft Zira - English (United States)";
+            voices.forEach((voice)=>{
+                if(voice.name === selectedVoiceName){
+                    toSpeak.voice = voice;
+                }
+            });
+            synth.speak(toSpeak);}
             
         
 var lastImageNumber = 36;
@@ -59,6 +78,7 @@ function deviceOrientationListener(event) {
             if(Math.round(event.beta)>90){
                 if(Math.round(event.gamma)>8){
                     ctx.fillText("Orientation of Seating:" + "Proper Seating Mode",10,240);
+                        speech1();
                 }
             }
         }
