@@ -36,6 +36,16 @@
                 }
             });
             synth.speak(toSpeak);}
+
+        function speech3(){  
+        var toSpeak = new SpeechSynthesisUtterance("Thanks for using Smart Chair");
+            var selectedVoiceName = "Microsoft Zira - English (United States)";
+            voices.forEach((voice)=>{
+                if(voice.name === selectedVoiceName){
+                    toSpeak.voice = voice;
+                }
+            });
+            synth.speak(toSpeak);}
             
         
 var lastImageNumber = 36;
@@ -100,9 +110,33 @@ function deviceOrientationListener(event) {
         if(Math.round(event.beta)>80){
             if(Math.round(event.gamma)>0){
                 ctx.fillText("Orientation of Seating:" + "Not Proper Seating Mode",10,240);
+                    speech2();
             }
         }
     }
+        if(Math.round(event.beta)=90)
+            {
+                if(Math.round(event.alpha)<150)
+                {
+                    
+                        
+                            ctx.fillText("Thanks for using Smart Chair",10,280);
+                                speech3();
+                        
+                    
+                }
+            }
+        else{
+               if(Math.round(event.alpha)==0)
+                    {
+                        if(Math.round(event.beta)==0){
+                            if(Math.round(event.gamma)==0){
+                                ctx.fillText("Thanks for using Smart Chair",10,280);
+                                    speech3();
+                            }
+                        }
+                    } 
+        }
 
      var img = document.getElementById('cd');
      var GammaVal = round(event.gamma);
