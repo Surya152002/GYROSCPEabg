@@ -5,7 +5,7 @@
        
         var synth = window.speechSynthesis;
         var voices = [];
-        speech();
+        
         
 
         function speech(){  
@@ -85,7 +85,7 @@ function deviceOrientationListener(event) {
     {
         
                     ctx.fillText("Orientation of Seating:" + "Proper Seating Mode",10,240);
-                        speech1();
+                        
                
     }
     if(Math.round(event.alpha)>0)
