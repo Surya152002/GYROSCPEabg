@@ -101,7 +101,7 @@ function deviceOrientationListener(event) {
         }
     }
     
-        if(Math.round(event.beta)<83){
+        if(Math.round(event.beta)<80){
             
                 ctx.fillText("Orientation of Seating:" + "Not Proper Seating Mode",10,240);
                     
