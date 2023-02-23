@@ -6,7 +6,7 @@
         var synth = window.speechSynthesis;
         var voices = [];
         speech();
-        int i=0;
+        var i=1;
 
         function speech(){  
         var toSpeak = new SpeechSynthesisUtterance("Welcome");
@@ -68,7 +68,7 @@ function deviceOrientationListener(event) {
         if(Math.round(event.beta)>0){
             if(Math.round(event.gamma)>0){
                 ctx.fillText("User Started using Application",10,200); 
-                while(i=0){
+                while(i>0){
 
                     speech();
                 }
