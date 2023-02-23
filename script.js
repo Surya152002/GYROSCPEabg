@@ -6,7 +6,7 @@
         var synth = window.speechSynthesis;
         var voices = [];
         speech();
-        var i=1;
+        
 
         function speech(){  
         var toSpeak = new SpeechSynthesisUtterance("Welcome");
