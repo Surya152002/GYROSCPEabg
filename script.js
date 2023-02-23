@@ -109,17 +109,16 @@ function deviceOrientationListener(event) {
             }
         }
     }
-        if(Math.round(event.beta)=90)
+        if(Math.round(event.gamma )<5)
             {
-                if(Math.round(event.alpha)<150)
-                {
+                
                     
                         
                             ctx.fillText("Thanks for using Smart Chair",10,280);
                                 
                         
                     
-                }
+                
             }
         else{
                if(Math.round(event.alpha)==0)
