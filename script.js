@@ -81,7 +81,7 @@ function deviceOrientationListener(event) {
      ctx.fillText("Beta:" + Math.round(event.beta),10,80);
      ctx.fillText("Gamma:" + Math.round(event.gamma),10,120);
     
-    if(Math.round(event.alpha)<93 && (event.alpha)>85    )
+    if(Math.round(event.beta)<93 && (event.beta)>85    )
     {
         
                     ctx.fillText("Orientation of Seating:" + "Proper Seating Mode",10,240);
@@ -102,14 +102,14 @@ function deviceOrientationListener(event) {
     }
     if(Math.round(event.alpha)>120 && Math.round(event.alpha)<150)
     {
-        if(Math.round(event.beta)>80){
+        if(Math.round(event.beta)<80){
             if(Math.round(event.gamma)>0){
                 ctx.fillText("Orientation of Seating:" + "Not Proper Seating Mode",10,240);
                     
             }
         }
     }
-        if(Math.round(event.gamma )<5)
+        if(Math.round(event.gamma )<55)
             {
                 
                     
