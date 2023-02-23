@@ -109,7 +109,7 @@ function deviceOrientationListener(event) {
             }
         }
     }
-        if(Math.round(event.gamma )<55)
+        if(Math.round(event.gamma )<55 &&   Math.round(event.beta)<27   )
             {
                 
                     
