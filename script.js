@@ -1,51 +1,51 @@
 
 
         
-        var voiceList = document.querySelector('#voiceList');
+//         var voiceList = document.querySelector('#voiceList');
        
-        var synth = window.speechSynthesis;
-        var voices = [];
+//         var synth = window.speechSynthesis;
+//         var voices = [];
         
         
 
-        function speech(){  
-        var toSpeak = new SpeechSynthesisUtterance("User Started using Application");
-            var selectedVoiceName = "Microsoft Zira - English (United States)";
-            voices.forEach((voice)=>{
-                if(voice.name === selectedVoiceName){
-                    toSpeak.voice = voice;
-                }
-            });
-            synth.speak(toSpeak);}
+//         function speech(){  
+//         var toSpeak = new SpeechSynthesisUtterance("User Started using Application");
+//             var selectedVoiceName = "Microsoft Zira - English (United States)";
+//             voices.forEach((voice)=>{
+//                 if(voice.name === selectedVoiceName){
+//                     toSpeak.voice = voice;
+//                 }
+//             });
+//             synth.speak(toSpeak);}
 
-         function speech1(){  
-        var toSpeak = new SpeechSynthesisUtterance("Orientation of Seating:" + "Proper Seating Mode");
-            var selectedVoiceName = "Microsoft Zira - English (United States)";
-            voices.forEach((voice)=>{
-                if(voice.name === selectedVoiceName){
-                    toSpeak.voice = voice;
-                }
-            });
-            synth.speak(toSpeak);}
-        function speech2(){  
-        var toSpeak = new SpeechSynthesisUtterance("Orientation of Seating:" + "Not Proper Seating Mode");
-            var selectedVoiceName = "Microsoft Zira - English (United States)";
-            voices.forEach((voice)=>{
-                if(voice.name === selectedVoiceName){
-                    toSpeak.voice = voice;
-                }
-            });
-            synth.speak(toSpeak);}
+//          function speech1(){  
+//         var toSpeak = new SpeechSynthesisUtterance("Orientation of Seating:" + "Proper Seating Mode");
+//             var selectedVoiceName = "Microsoft Zira - English (United States)";
+//             voices.forEach((voice)=>{
+//                 if(voice.name === selectedVoiceName){
+//                     toSpeak.voice = voice;
+//                 }
+//             });
+//             synth.speak(toSpeak);}
+//         function speech2(){  
+//         var toSpeak = new SpeechSynthesisUtterance("Orientation of Seating:" + "Not Proper Seating Mode");
+//             var selectedVoiceName = "Microsoft Zira - English (United States)";
+//             voices.forEach((voice)=>{
+//                 if(voice.name === selectedVoiceName){
+//                     toSpeak.voice = voice;
+//                 }
+//             });
+//             synth.speak(toSpeak);}
 
-        function speech3(){  
-        var toSpeak = new SpeechSynthesisUtterance("Thanks for using Smart Chair");
-            var selectedVoiceName = "Microsoft Zira - English (United States)";
-            voices.forEach((voice)=>{
-                if(voice.name === selectedVoiceName){
-                    toSpeak.voice = voice;
-                }
-            });
-            synth.speak(toSpeak);}
+//         function speech3(){  
+//         var toSpeak = new SpeechSynthesisUtterance("Thanks for using Smart Chair");
+//             var selectedVoiceName = "Microsoft Zira - English (United States)";
+//             voices.forEach((voice)=>{
+//                 if(voice.name === selectedVoiceName){
+//                     toSpeak.voice = voice;
+//                 }
+//             });
+//             synth.speak(toSpeak);}
             
         
 var lastImageNumber = 36;
